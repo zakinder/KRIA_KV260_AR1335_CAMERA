@@ -1,0 +1,378 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Jun 30 18:20:34 2022
+# Process ID: 107344
+# Current directory: O:/KV260/v_log
+# Command line: vivado.exe -source ../scripts/script_main.tcl -mode batch -notrace -tclargs --gui 1
+# Log file: O:/KV260/v_log/vivado.log
+# Journal file: O:/KV260/v_log\vivado.jou
+# Running On: ASUS, OS: Windows, CPU Frequency: 3504 MHz, CPU Physical cores: 8, Host memory: 34222 MB
+#-----------------------------------------------------------
+source ../scripts/script_main.tcl -notrace
+-----------------------------------------------------------------------
+INFO:(TE) Load Settings Script finished
+INFO:(TE) Load environment script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Utilities script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Designs script finished
+INFO:(TE) Load User Command scripts finished
+INFO:(TE) Load SDSoC script finished
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+INFO: [TE_INIT-3] Initial project names and paths:
+  TE::VPROJ_NAME:           KV260 
+  TE::VPROJ_PATH:           O:/KV260/vivado 
+  TE::VLABPROJ_PATH:        O:/KV260/vivado_lab 
+  TE::BOARDDEF_PATH:        O:/KV260/board_files 
+  TE::FIRMWARE_PATH:        O:/KV260/firmware 
+  TE::IP_PATH:              O:/KV260/ip_lib 
+  TE::BD_PATH:              O:/KV260/block_design 
+  TE::XDC_PATH:             O:/KV260/constraints 
+  TE::HDL_PATH:             O:/KV260/hdl 
+  TE::SET_PATH:             O:/KV260/settings 
+  TE::PETALINUX_PATH:				O:/KV260/os/petalinux 
+  TE::WORKSPACE_HSI_PATH:   O:/KV260/workspace/hsi 
+  TE::WORKSPACE_SDK_PATH:   O:/KV260/workspace/sdk 
+  TE::LIB_PATH:             O:/KV260/sw_lib 
+  TE::SCRIPT_PATH:          O:/KV260/scripts 
+  TE::DOC_PATH:             O:/KV260/doc 
+  TE::PREBUILT_BI_PATH:     O:/KV260/prebuilt/boot_images 
+  TE::PREBUILT_HW_PATH:     O:/KV260/prebuilt/hardware 
+  TE::PREBUILT_SW_PATH:     O:/KV260/prebuilt/software 
+  TE::PREBUILT_OS_PATH:     O:/KV260/prebuilt/os 
+  TE::PREBUILT_EXPORT_PATH: O:/KV260/../export 
+  TE::LOG_PATH:             O:/KV260/v_log 
+  TE::BACKUP_PATH:          O:/KV260/backup 
+  TE::ZIP_PATH:             C:/Program Files/7-Zip/7z.exe 
+  TE::XRT_PATH:             O:/KV260/xrt 
+  TE::XRT_USED:             false 
+  TE::SDSOC_PATH:           O:/KV260/../SDSoC_PFM 
+  TE::ADD_SD_PATH:          O:/KV260/misc/sd 
+  TE::TMP_PATH:             O:/KV260/tmp 
+  TE::XILINXGIT_DEVICETREE: B:/xilinx_git/device-tree-xlnx 
+  TE::XILINXGIT_UBOOT:       
+  TE::XILINXGIT_LINUX:       
+  ------
+-----------------------------------------------------------------------
+INFO:(TE) Parameter Index: 0
+INFO:(TE) Parameter Option: --gui
+INFO:(TE) Parameter Option Value: 1
+-----------------------------------------------------------------------
+INFO: [TE_INIT-129] Run TE::INIT::run_project NA 0 1 0
+INFO: [TE_INIT-0] Script Info:
+  Xilinx Directory:                           C:/Xilinx
+  Vivado Version:                             Vivado v2022.1 (64-bit)
+  TE Script Version:                          2020.2.9
+  Board Part (Definition Files) CSV Version:  1.4
+  Software IP CSV Version:                    2.4
+  Board Design Modify CSV Version:            1.1
+  ZIP ignore CSV Version:                     1.0
+  ---
+  Start project with:                         OPEN_PROJECT_GM
+  ------
+INFO: [TE_INIT-1] Script Environment:
+  TIMEOUT Setting:        	120 
+  RUNNING_JOBS Setting:    	16 
+  Vivado Setting:       		1 
+  LabTools Setting:     		0 
+  VITIS Setting:        		1 
+  SDSOC Setting(obsolete):	0 
+  ------
+INFO: [TE_INIT-3] Initial project names and paths:
+  TE::VPROJ_NAME:           KV260 
+  TE::VPROJ_PATH:           O:/KV260/vivado 
+  TE::VLABPROJ_PATH:        O:/KV260/vivado_lab 
+  TE::BOARDDEF_PATH:        O:/KV260/board_files 
+  TE::FIRMWARE_PATH:        O:/KV260/firmware 
+  TE::IP_PATH:              O:/KV260/ip_lib 
+  TE::BD_PATH:              O:/KV260/block_design 
+  TE::XDC_PATH:             O:/KV260/constraints 
+  TE::HDL_PATH:             O:/KV260/hdl 
+  TE::SET_PATH:             O:/KV260/settings 
+  TE::PETALINUX_PATH:				O:/KV260/os/petalinux 
+  TE::WORKSPACE_HSI_PATH:   O:/KV260/workspace/hsi 
+  TE::WORKSPACE_SDK_PATH:   O:/KV260/workspace/sdk 
+  TE::LIB_PATH:             O:/KV260/sw_lib 
+  TE::SCRIPT_PATH:          O:/KV260/scripts 
+  TE::DOC_PATH:             O:/KV260/doc 
+  TE::PREBUILT_BI_PATH:     O:/KV260/prebuilt/boot_images 
+  TE::PREBUILT_HW_PATH:     O:/KV260/prebuilt/hardware 
+  TE::PREBUILT_SW_PATH:     O:/KV260/prebuilt/software 
+  TE::PREBUILT_OS_PATH:     O:/KV260/prebuilt/os 
+  TE::PREBUILT_EXPORT_PATH: O:/KV260/../export 
+  TE::LOG_PATH:             O:/KV260/v_log 
+  TE::BACKUP_PATH:          O:/KV260/backup 
+  TE::ZIP_PATH:             C:/Program Files/7-Zip/7z.exe 
+  TE::XRT_PATH:             O:/KV260/xrt 
+  TE::XRT_USED:             false 
+  TE::SDSOC_PATH:           O:/KV260/../SDSoC_PFM 
+  TE::ADD_SD_PATH:          O:/KV260/misc/sd 
+  TE::TMP_PATH:             O:/KV260/tmp 
+  TE::XILINXGIT_DEVICETREE: B:/xilinx_git/device-tree-xlnx 
+  TE::XILINXGIT_UBOOT:       
+  TE::XILINXGIT_LINUX:       
+  ------
+INFO: [TE_INIT-16] Read board part definition list (File O:/KV260/board_files/board_files.csv).
+INFO: [TE_INIT-21] No software apps_list used.
+INFO: [TE_INIT-24] No Zip ignore list used.
+Open existing project (File: O:/KV260/vivado/KV260.xpr).
+INFO: [TE_INIT-69] Set Board Definition path: O:/KV260/board_files
+INFO: [Project 1-313] Project file moved from 'N:/KV260/vivado' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'o:/KV260/ip_lib'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1638.461 ; gain = 0.000
+Board part csv name check:  KriaKV260 is unique on position 1.
+INFO: [TE_INIT-4] Board Part definition:
+  TE::ID:             1 
+  TE::PRODID:         KriaKV260 
+  TE::PARTNAME:       xck26-sfvc784-2LV-c 
+  TE::BOARDPART:      xilinx.com:kv260_som:part0:1.3 
+  TE::SHORTDIR:       kv260_som 
+  TE::ZYNQFLASHTYP:   qspi-x8-dual_parallel 
+  TE::FPGAFLASHTYP:   mt25qu512-qspi-x8-dual_parallel 
+  TE::PCB_REV:        REV01 
+  TE::DDR_SIZE:       2GB 
+  TE::FLASH_SIZE:     128MB 
+  TE::EMMC_SIZE:      NA 
+  TE::OTHERS:         NA 
+  TE::NOTES:          NA 
+  ------
+INFO: [TE_UTIL-2] Following block designs were found: 
+   O:/KV260/block_design/zusys_bd.tcl 
+  ------
+INFO: [TE_INIT-8] Found BD-Design:
+  TE::BD_TCLNAME:       zusys_bd 
+  TE::PR_TOPLEVELNAME: zusys_wrapper 
+  ------
+  TE::IS_ZUSYS:        true
+WARNING: [TE_HW-23] Current top level name is set to kv260_ispMipiRx_DP_wrapper, expect zusys_wrapper from default initialisation. Set TE::PR_TOPLEVELNAME to kv260_ispMipiRx_DP_wrapper.
+INFO: [TE_HW-24] Restore project parameters:
+  TE::SIM_NAME:         sim_1  
+  TE::SYNTH_NAME:       synth_1  
+  TE::IMPL_NAME:        impl_1  
+  TE::CONST_NAME:       constrs_1  
+  ------
+Start GUI...all other messages will be print inside the GUI TCL console of Vivado
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [TE_INIT-139] Run project finished without Error. 
+  ------
+-----------------------------------------------------------------------
+update_compile_order -fileset sources_1
+open_bd_design {O:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/kv260_ispMipiRx_DP.bd}
+Reading block design file <O:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/kv260_ispMipiRx_DP.bd>...
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.4 - PS_0
+Adding component instance block -- xilinx.com:ip:axi_iic:2.1 - axi_iic_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_ctrl_100
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_ctrl_300
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo_cap
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:mipi_csi2_rx_subsystem:5.1 - mipi_csi2_rx_subsyst_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_100MHz
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_300MHz
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_600MHz
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_cap
+Adding component instance block -- xilinx.com:ip:v_frmbuf_wr:2.4 - v_frmbuf_wr_0
+Adding component instance block -- xilinx.com:ip:v_proc_ss:2.3 - v_proc_ss_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_irq1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_7
+Successfully read diagram <kv260_ispMipiRx_DP> from block design file <O:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/kv260_ispMipiRx_DP.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1684.094 ; gain = 45.633
+WARNING: [IP_Flow 19-465] param 'HAS_Y8' already exists. Ignoring.
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+startgroup
+set_property -dict [list CONFIG.C_EN_BG0_PIN0 {false} CONFIG.C_EN_BG1_PIN0 {false} CONFIG.CMN_PXL_FORMAT {RAW10} CONFIG.CMN_NUM_LANES {2} CONFIG.C_DPHY_LANES {2} CONFIG.C_HS_LINE_RATE {912} CONFIG.DPY_LINE_RATE {912} CONFIG.CLK_LANE_IO_LOC {D7} CONFIG.DATA_LANE0_IO_LOC {E5} CONFIG.DATA_LANE1_IO_LOC {G6} CONFIG.CLK_LANE_IO_LOC_NAME {IO_L13P_T2L_N0_GC_QBC_66} CONFIG.DATA_LANE0_IO_LOC_NAME {IO_L14P_T2L_N2_GC_66} CONFIG.DATA_LANE1_IO_LOC_NAME {IO_L15P_T2L_N4_AD11P_66} CONFIG.C_CLK_LANE_IO_POSITION {26} CONFIG.C_DATA_LANE0_IO_POSITION {28} CONFIG.C_DATA_LANE1_IO_POSITION {30} CONFIG.C_HS_SETTLE_NS {145} CONFIG.DPHYRX_BOARD_INTERFACE {som240_1_connector_mipi_csi_raspi}] [get_bd_cells mipi_csi2_rx_subsyst_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+endgroup
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.C_EN_BG0_PIN0 {true} CONFIG.C_EN_BG1_PIN0 {true} CONFIG.CMN_NUM_LANES {4} CONFIG.C_DPHY_LANES {4}] [get_bd_cells mipi_csi2_rx_subsyst_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+endgroup
+save_bd_design
+Wrote  : <O:\KV260\vivado\KV260.srcs\sources_1\bd\kv260_ispMipiRx_DP\kv260_ispMipiRx_DP.bd> 
+Wrote  : <O:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ui/bd_49ab33c8.ui> 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [xilinx.com:ip:smartconnect:1.0-1] bd_530e_smartconnect_0_0: SmartConnect bd_530e_smartconnect_0_0 is in Low-Area Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] kv260_ispMipiRx_DP_smartconnect_cap_0: SmartConnect kv260_ispMipiRx_DP_smartconnect_cap_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_ctrl_300/s00_couplers/auto_pc/S_AXI(0) and /PS_0/M_AXI_HPM1_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_ctrl_300/s00_couplers/auto_pc/S_AXI(0) and /PS_0/M_AXI_HPM1_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_ctrl_100/s00_couplers/auto_pc/S_AXI(0) and /PS_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_ctrl_100/s00_couplers/auto_pc/S_AXI(0) and /PS_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /PS_0/S_AXI_HP0_FPD(1) and /smartconnect_cap/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /PS_0/S_AXI_HP0_FPD(1) and /smartconnect_cap/M00_AXI(0)
+Wrote  : <O:\KV260\vivado\KV260.srcs\sources_1\bd\kv260_ispMipiRx_DP\kv260_ispMipiRx_DP.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_cap/S00_AXI_arlock'(1) to pin: '/v_frmbuf_wr_0/m_axi_mm_video_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_cap/S00_AXI_awlock'(1) to pin: '/v_frmbuf_wr_0/m_axi_mm_video_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/synth/kv260_ispMipiRx_DP.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_cap/S00_AXI_arlock'(1) to pin: '/v_frmbuf_wr_0/m_axi_mm_video_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_cap/S00_AXI_awlock'(1) to pin: '/v_frmbuf_wr_0/m_axi_mm_video_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/sim/kv260_ispMipiRx_DP.vhd
+VHDL Output written to : o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/hdl/kv260_ispMipiRx_DP_wrapper.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/phy/data_rxn'(4) to pin: '/mipi_phy_if_data_n'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/phy/data_rxp'(4) to pin: '/mipi_phy_if_data_p'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/phy/data_rxn'(4) to pin: '/mipi_phy_if_data_n'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/phy/data_rxp'(4) to pin: '/mipi_phy_if_data_p'(2) - Only lower order bits will be connected.
+Exporting to file o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/hw_handoff/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0.hwh
+Generated Hardware Definition File o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/synth/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx_subsyst_0 .
+Exporting to file o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_smartconnect_cap_0/bd_0/hw_handoff/kv260_ispMipiRx_DP_smartconnect_cap_0.hwh
+Generated Hardware Definition File o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_smartconnect_cap_0/bd_0/synth/kv260_ispMipiRx_DP_smartconnect_cap_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_cap .
+Exporting to file o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_1/hw_handoff/bd_530e_smartconnect_0_0.hwh
+Generated Hardware Definition File o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_1/synth/bd_530e_smartconnect_0_0.hwdef
+Exporting to file o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/hw_handoff/kv260_ispMipiRx_DP_v_proc_ss_0_0.hwh
+Generated Hardware Definition File o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/synth/kv260_ispMipiRx_DP_v_proc_ss_0_0.hwdef
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_auto_pc_0/kv260_ispMipiRx_DP_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_ctrl_100/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_auto_pc_1/kv260_ispMipiRx_DP_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_ctrl_300/s00_couplers/auto_pc .
+Exporting to file o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/hw_handoff/kv260_ispMipiRx_DP.hwh
+Generated Hardware Definition File o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/synth/kv260_ispMipiRx_DP.hwdef
+[Thu Jun 30 20:03:31 2022] Launched kv260_ispMipiRx_DP_v_proc_ss_0_0_synth_1, kv260_ispMipiRx_DP_axi_iic_0_0_synth_1, kv260_ispMipiRx_DP_proc_sys_reset_100MHz_0_synth_1, kv260_ispMipiRx_DP_smartconnect_cap_0_synth_1, kv260_ispMipiRx_DP_axis_subset_converter_0_0_synth_1, kv260_ispMipiRx_DP_xbar_1_synth_1, kv260_ispMipiRx_DP_clk_wiz_0_0_synth_1, kv260_ispMipiRx_DP_axis_data_fifo_cap_0_synth_1, kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_synth_1, kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0_synth_1, kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0_synth_1, kv260_ispMipiRx_DP_xbar_0_synth_1, kv260_ispMipiRx_DP_v_frmbuf_wr_0_0_synth_1, bd_530e_smartconnect_0_0_synth_1, bd_530e_axis_fifo_0_synth_1, bd_530e_input_size_set_0_synth_1, bd_530e_rst_axis_0_synth_1, bd_530e_reset_sel_axis_0_synth_1, bd_530e_vsc_0_synth_1, bd_530e_hsc_0_synth_1, bd_530e_axis_register_slice_0_0_synth_1, kv260_ispMipiRx_DP_PS_0_0_synth_1, bd_1590_phy_0_synth_1, bd_1590_rx_0_synth_1, bd_1590_r_sync_0_synth_1, bd_1590_vfb_0_0_synth_1, kv260_ispMipiRx_DP_auto_pc_0_synth_1, kv260_ispMipiRx_DP_auto_pc_1_synth_1, synth_1...
+Run output will be captured here:
+kv260_ispMipiRx_DP_v_proc_ss_0_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_v_proc_ss_0_0_synth_1/runme.log
+kv260_ispMipiRx_DP_axi_iic_0_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_axi_iic_0_0_synth_1/runme.log
+kv260_ispMipiRx_DP_proc_sys_reset_100MHz_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_proc_sys_reset_100MHz_0_synth_1/runme.log
+kv260_ispMipiRx_DP_smartconnect_cap_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_smartconnect_cap_0_synth_1/runme.log
+kv260_ispMipiRx_DP_axis_subset_converter_0_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_axis_subset_converter_0_0_synth_1/runme.log
+kv260_ispMipiRx_DP_xbar_1_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_xbar_1_synth_1/runme.log
+kv260_ispMipiRx_DP_clk_wiz_0_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_clk_wiz_0_0_synth_1/runme.log
+kv260_ispMipiRx_DP_axis_data_fifo_cap_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_axis_data_fifo_cap_0_synth_1/runme.log
+kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_synth_1/runme.log
+kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0_synth_1/runme.log
+kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0_synth_1/runme.log
+kv260_ispMipiRx_DP_xbar_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_xbar_0_synth_1/runme.log
+kv260_ispMipiRx_DP_v_frmbuf_wr_0_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_v_frmbuf_wr_0_0_synth_1/runme.log
+bd_530e_smartconnect_0_0_synth_1: O:/KV260/vivado/KV260.runs/bd_530e_smartconnect_0_0_synth_1/runme.log
+bd_530e_axis_fifo_0_synth_1: O:/KV260/vivado/KV260.runs/bd_530e_axis_fifo_0_synth_1/runme.log
+bd_530e_input_size_set_0_synth_1: O:/KV260/vivado/KV260.runs/bd_530e_input_size_set_0_synth_1/runme.log
+bd_530e_rst_axis_0_synth_1: O:/KV260/vivado/KV260.runs/bd_530e_rst_axis_0_synth_1/runme.log
+bd_530e_reset_sel_axis_0_synth_1: O:/KV260/vivado/KV260.runs/bd_530e_reset_sel_axis_0_synth_1/runme.log
+bd_530e_vsc_0_synth_1: O:/KV260/vivado/KV260.runs/bd_530e_vsc_0_synth_1/runme.log
+bd_530e_hsc_0_synth_1: O:/KV260/vivado/KV260.runs/bd_530e_hsc_0_synth_1/runme.log
+bd_530e_axis_register_slice_0_0_synth_1: O:/KV260/vivado/KV260.runs/bd_530e_axis_register_slice_0_0_synth_1/runme.log
+kv260_ispMipiRx_DP_PS_0_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_PS_0_0_synth_1/runme.log
+bd_1590_phy_0_synth_1: O:/KV260/vivado/KV260.runs/bd_1590_phy_0_synth_1/runme.log
+bd_1590_rx_0_synth_1: O:/KV260/vivado/KV260.runs/bd_1590_rx_0_synth_1/runme.log
+bd_1590_r_sync_0_synth_1: O:/KV260/vivado/KV260.runs/bd_1590_r_sync_0_synth_1/runme.log
+bd_1590_vfb_0_0_synth_1: O:/KV260/vivado/KV260.runs/bd_1590_vfb_0_0_synth_1/runme.log
+kv260_ispMipiRx_DP_auto_pc_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_auto_pc_0_synth_1/runme.log
+kv260_ispMipiRx_DP_auto_pc_1_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_auto_pc_1_synth_1/runme.log
+synth_1: O:/KV260/vivado/KV260.runs/synth_1/runme.log
+[Thu Jun 30 20:03:32 2022] Launched impl_1...
+Run output will be captured here: O:/KV260/vivado/KV260.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:13 ; elapsed = 00:01:14 . Memory (MB): peak = 3127.609 ; gain = 90.105
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_frmbuf_wr_0_0/kv260_ispMipiRx_DP_v_frmbuf_wr_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/kv260_ispMipiRx_DP_v_proc_ss_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_PS_0_0/kv260_ispMipiRx_DP_PS_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axi_iic_0_0/kv260_ispMipiRx_DP_axi_iic_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xbar_0/kv260_ispMipiRx_DP_xbar_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axi_interconnect_ctrl_100_0/kv260_ispMipiRx_DP_axi_interconnect_ctrl_100_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xbar_1/kv260_ispMipiRx_DP_xbar_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axi_interconnect_ctrl_300_0/kv260_ispMipiRx_DP_axi_interconnect_ctrl_300_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axis_data_fifo_cap_0/kv260_ispMipiRx_DP_axis_data_fifo_cap_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axis_subset_converter_0_0/kv260_ispMipiRx_DP_axis_subset_converter_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_clk_wiz_0_0/kv260_ispMipiRx_DP_clk_wiz_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_100MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_100MHz_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_smartconnect_cap_0/kv260_ispMipiRx_DP_smartconnect_cap_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_frmbuf_wr_0_0/kv260_ispMipiRx_DP_v_frmbuf_wr_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/kv260_ispMipiRx_DP_v_proc_ss_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xlconcat_irq1_0/kv260_ispMipiRx_DP_xlconcat_irq1_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xlconstant_0_0/kv260_ispMipiRx_DP_xlconstant_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xlconstant_1_0/kv260_ispMipiRx_DP_xlconstant_1_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xlslice_0_0/kv260_ispMipiRx_DP_xlslice_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xlslice_1_0/kv260_ispMipiRx_DP_xlslice_1_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xlslice_7_0/kv260_ispMipiRx_DP_xlslice_7_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_auto_pc_0/kv260_ispMipiRx_DP_auto_pc_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_auto_pc_1/kv260_ispMipiRx_DP_auto_pc_1.xml. It will be created.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_2
+endgroup
+set_property -dict [list CONFIG.CONST_WIDTH {2}] [get_bd_cells xlconstant_2]
+set_property -dict [list CONFIG.CONST_WIDTH {1}] [get_bd_cells xlconstant_2]
+connect_bd_net [get_bd_pins xlconstant_2/dout] [get_bd_pins mipi_csi2_rx_subsyst_0/bg0_pin0_nc]
+connect_bd_net [get_bd_pins mipi_csi2_rx_subsyst_0/bg1_pin0_nc] [get_bd_pins xlconstant_2/dout]
+save_bd_design
+Wrote  : <O:\KV260\vivado\KV260.srcs\sources_1\bd\kv260_ispMipiRx_DP\kv260_ispMipiRx_DP.bd> 
+Wrote  : <O:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ui/bd_49ab33c8.ui> 
+reset_run synth_1
+INFO: [Project 1-1160] Copying file O:/KV260/vivado/KV260.runs/synth_1/kv260_ispMipiRx_DP_wrapper.dcp to N:/KV260/vivado/KV260.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+ERROR: [Common 17-1294] Unable to create directory [N:/KV260/vivado/KV260.srcs/utils_1/imports/synth_1].
+launch_runs impl_1 -jobs 16
+INFO: [xilinx.com:ip:smartconnect:1.0-1] bd_530e_smartconnect_0_0: SmartConnect bd_530e_smartconnect_0_0 is in Low-Area Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] kv260_ispMipiRx_DP_smartconnect_cap_0: SmartConnect kv260_ispMipiRx_DP_smartconnect_cap_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_ctrl_300/s00_couplers/auto_pc/S_AXI(0) and /PS_0/M_AXI_HPM1_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_ctrl_300/s00_couplers/auto_pc/S_AXI(0) and /PS_0/M_AXI_HPM1_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_ctrl_100/s00_couplers/auto_pc/S_AXI(0) and /PS_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_ctrl_100/s00_couplers/auto_pc/S_AXI(0) and /PS_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /PS_0/S_AXI_HP0_FPD(1) and /smartconnect_cap/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /PS_0/S_AXI_HP0_FPD(1) and /smartconnect_cap/M00_AXI(0)
+Wrote  : <O:\KV260\vivado\KV260.srcs\sources_1\bd\kv260_ispMipiRx_DP\kv260_ispMipiRx_DP.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_cap/S00_AXI_arlock'(1) to pin: '/v_frmbuf_wr_0/m_axi_mm_video_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_cap/S00_AXI_awlock'(1) to pin: '/v_frmbuf_wr_0/m_axi_mm_video_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/synth/kv260_ispMipiRx_DP.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_cap/S00_AXI_arlock'(1) to pin: '/v_frmbuf_wr_0/m_axi_mm_video_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smartconnect_cap/S00_AXI_awlock'(1) to pin: '/v_frmbuf_wr_0/m_axi_mm_video_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/sim/kv260_ispMipiRx_DP.vhd
+VHDL Output written to : o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/hdl/kv260_ispMipiRx_DP_wrapper.vhd
+Exporting to file o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/hw_handoff/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0.hwh
+Generated Hardware Definition File o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/synth/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0.hwdef
+Exporting to file o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_smartconnect_cap_0/bd_0/hw_handoff/kv260_ispMipiRx_DP_smartconnect_cap_0.hwh
+Generated Hardware Definition File o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_smartconnect_cap_0/bd_0/synth/kv260_ispMipiRx_DP_smartconnect_cap_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_cap .
+Exporting to file o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_1/hw_handoff/bd_530e_smartconnect_0_0.hwh
+Generated Hardware Definition File o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_1/synth/bd_530e_smartconnect_0_0.hwdef
+Exporting to file o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/hw_handoff/kv260_ispMipiRx_DP_v_proc_ss_0_0.hwh
+Generated Hardware Definition File o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/synth/kv260_ispMipiRx_DP_v_proc_ss_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_auto_pc_0/kv260_ispMipiRx_DP_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_ctrl_100/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_auto_pc_1/kv260_ispMipiRx_DP_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_ctrl_300/s00_couplers/auto_pc .
+Exporting to file o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/hw_handoff/kv260_ispMipiRx_DP.hwh
+Generated Hardware Definition File o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/synth/kv260_ispMipiRx_DP.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP kv260_ispMipiRx_DP_auto_pc_0, cache-ID = b19bbea45872d513; cache size = 51.415 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP kv260_ispMipiRx_DP_auto_pc_1, cache-ID = 0cf8e8fe1fef3865; cache size = 51.415 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP kv260_ispMipiRx_DP_smartconnect_cap_0, cache-ID = 043b5d25bbcf2f6e; cache size = 51.415 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bd_530e_smartconnect_0_0, cache-ID = d8eee3dbacaf241f; cache size = 51.415 MB.
+[Thu Jun 30 20:27:22 2022] Launched impl_1...
+Run output will be captured here: O:/KV260/vivado/KV260.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 3257.980 ; gain = 54.074
+delete_bd_objs [get_bd_cells xlconstant_2]
+delete_bd_objs [get_bd_nets xlconstant_2_dout]
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 30 21:32:01 2022...

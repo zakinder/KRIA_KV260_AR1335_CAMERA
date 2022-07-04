@@ -1,0 +1,1238 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Jul  3 09:09:36 2022
+# Process ID: 59060
+# Current directory: O:/KV260/v_log
+# Command line: vivado.exe -source ../scripts/script_main.tcl -mode batch -notrace -tclargs --gui 1
+# Log file: O:/KV260/v_log/vivado.log
+# Journal file: O:/KV260/v_log\vivado.jou
+# Running On: ASUS, OS: Windows, CPU Frequency: 3504 MHz, CPU Physical cores: 8, Host memory: 34222 MB
+#-----------------------------------------------------------
+source ../scripts/script_main.tcl -notrace
+-----------------------------------------------------------------------
+INFO:(TE) Load Settings Script finished
+INFO:(TE) Load environment script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Utilities script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Designs script finished
+INFO:(TE) Load User Command scripts finished
+INFO:(TE) Load SDSoC script finished
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+INFO: [TE_INIT-3] Initial project names and paths:
+  TE::VPROJ_NAME:           KV260 
+  TE::VPROJ_PATH:           O:/KV260/vivado 
+  TE::VLABPROJ_PATH:        O:/KV260/vivado_lab 
+  TE::BOARDDEF_PATH:        O:/KV260/board_files 
+  TE::FIRMWARE_PATH:        O:/KV260/firmware 
+  TE::IP_PATH:              O:/KV260/ip_lib 
+  TE::BD_PATH:              O:/KV260/block_design 
+  TE::XDC_PATH:             O:/KV260/constraints 
+  TE::HDL_PATH:             O:/KV260/hdl 
+  TE::SET_PATH:             O:/KV260/settings 
+  TE::PETALINUX_PATH:				O:/KV260/os/petalinux 
+  TE::WORKSPACE_HSI_PATH:   O:/KV260/workspace/hsi 
+  TE::WORKSPACE_SDK_PATH:   O:/KV260/workspace/sdk 
+  TE::LIB_PATH:             O:/KV260/sw_lib 
+  TE::SCRIPT_PATH:          O:/KV260/scripts 
+  TE::DOC_PATH:             O:/KV260/doc 
+  TE::PREBUILT_BI_PATH:     O:/KV260/prebuilt/boot_images 
+  TE::PREBUILT_HW_PATH:     O:/KV260/prebuilt/hardware 
+  TE::PREBUILT_SW_PATH:     O:/KV260/prebuilt/software 
+  TE::PREBUILT_OS_PATH:     O:/KV260/prebuilt/os 
+  TE::PREBUILT_EXPORT_PATH: O:/KV260/../export 
+  TE::LOG_PATH:             O:/KV260/v_log 
+  TE::BACKUP_PATH:          O:/KV260/backup 
+  TE::ZIP_PATH:             C:/Program Files/7-Zip/7z.exe 
+  TE::XRT_PATH:             O:/KV260/xrt 
+  TE::XRT_USED:             false 
+  TE::SDSOC_PATH:           O:/KV260/../SDSoC_PFM 
+  TE::ADD_SD_PATH:          O:/KV260/misc/sd 
+  TE::TMP_PATH:             O:/KV260/tmp 
+  TE::XILINXGIT_DEVICETREE: B:/xilinx_git/device-tree-xlnx 
+  TE::XILINXGIT_UBOOT:       
+  TE::XILINXGIT_LINUX:       
+  ------
+-----------------------------------------------------------------------
+INFO:(TE) Parameter Index: 0
+INFO:(TE) Parameter Option: --gui
+INFO:(TE) Parameter Option Value: 1
+-----------------------------------------------------------------------
+INFO: [TE_INIT-129] Run TE::INIT::run_project NA 0 1 0
+INFO: [TE_INIT-0] Script Info:
+  Xilinx Directory:                           C:/Xilinx
+  Vivado Version:                             Vivado v2022.1 (64-bit)
+  TE Script Version:                          2020.2.9
+  Board Part (Definition Files) CSV Version:  1.4
+  Software IP CSV Version:                    2.4
+  Board Design Modify CSV Version:            1.1
+  ZIP ignore CSV Version:                     1.0
+  ---
+  Start project with:                         OPEN_PROJECT_GM
+  ------
+INFO: [TE_INIT-1] Script Environment:
+  TIMEOUT Setting:        	120 
+  RUNNING_JOBS Setting:    	16 
+  Vivado Setting:       		1 
+  LabTools Setting:     		0 
+  VITIS Setting:        		1 
+  SDSOC Setting(obsolete):	0 
+  ------
+INFO: [TE_INIT-3] Initial project names and paths:
+  TE::VPROJ_NAME:           KV260 
+  TE::VPROJ_PATH:           O:/KV260/vivado 
+  TE::VLABPROJ_PATH:        O:/KV260/vivado_lab 
+  TE::BOARDDEF_PATH:        O:/KV260/board_files 
+  TE::FIRMWARE_PATH:        O:/KV260/firmware 
+  TE::IP_PATH:              O:/KV260/ip_lib 
+  TE::BD_PATH:              O:/KV260/block_design 
+  TE::XDC_PATH:             O:/KV260/constraints 
+  TE::HDL_PATH:             O:/KV260/hdl 
+  TE::SET_PATH:             O:/KV260/settings 
+  TE::PETALINUX_PATH:				O:/KV260/os/petalinux 
+  TE::WORKSPACE_HSI_PATH:   O:/KV260/workspace/hsi 
+  TE::WORKSPACE_SDK_PATH:   O:/KV260/workspace/sdk 
+  TE::LIB_PATH:             O:/KV260/sw_lib 
+  TE::SCRIPT_PATH:          O:/KV260/scripts 
+  TE::DOC_PATH:             O:/KV260/doc 
+  TE::PREBUILT_BI_PATH:     O:/KV260/prebuilt/boot_images 
+  TE::PREBUILT_HW_PATH:     O:/KV260/prebuilt/hardware 
+  TE::PREBUILT_SW_PATH:     O:/KV260/prebuilt/software 
+  TE::PREBUILT_OS_PATH:     O:/KV260/prebuilt/os 
+  TE::PREBUILT_EXPORT_PATH: O:/KV260/../export 
+  TE::LOG_PATH:             O:/KV260/v_log 
+  TE::BACKUP_PATH:          O:/KV260/backup 
+  TE::ZIP_PATH:             C:/Program Files/7-Zip/7z.exe 
+  TE::XRT_PATH:             O:/KV260/xrt 
+  TE::XRT_USED:             false 
+  TE::SDSOC_PATH:           O:/KV260/../SDSoC_PFM 
+  TE::ADD_SD_PATH:          O:/KV260/misc/sd 
+  TE::TMP_PATH:             O:/KV260/tmp 
+  TE::XILINXGIT_DEVICETREE: B:/xilinx_git/device-tree-xlnx 
+  TE::XILINXGIT_UBOOT:       
+  TE::XILINXGIT_LINUX:       
+  ------
+INFO: [TE_INIT-16] Read board part definition list (File O:/KV260/board_files/board_files.csv).
+INFO: [TE_INIT-21] No software apps_list used.
+INFO: [TE_INIT-24] No Zip ignore list used.
+Open existing project (File: O:/KV260/vivado/KV260.xpr).
+INFO: [TE_INIT-69] Set Board Definition path: O:/KV260/board_files
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'o:/KV260/ip_lib'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0' generated file not found 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0' generated file not found 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0' generated file not found 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0' generated file not found 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0' generated file not found 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1637.250 ; gain = 0.000
+Board part csv name check:  KriaKV260 is unique on position 1.
+INFO: [TE_INIT-4] Board Part definition:
+  TE::ID:             1 
+  TE::PRODID:         KriaKV260 
+  TE::PARTNAME:       xck26-sfvc784-2LV-c 
+  TE::BOARDPART:      xilinx.com:kv260_som:part0:1.3 
+  TE::SHORTDIR:       kv260_som 
+  TE::ZYNQFLASHTYP:   qspi-x8-dual_parallel 
+  TE::FPGAFLASHTYP:   mt25qu512-qspi-x8-dual_parallel 
+  TE::PCB_REV:        REV01 
+  TE::DDR_SIZE:       2GB 
+  TE::FLASH_SIZE:     128MB 
+  TE::EMMC_SIZE:      NA 
+  TE::OTHERS:         NA 
+  TE::NOTES:          NA 
+  ------
+INFO: [TE_UTIL-2] Following block designs were found: 
+   O:/KV260/block_design/zusys_bd.tcl 
+  ------
+INFO: [TE_INIT-8] Found BD-Design:
+  TE::BD_TCLNAME:       zusys_bd 
+  TE::PR_TOPLEVELNAME: zusys_wrapper 
+  ------
+  TE::IS_ZUSYS:        true
+WARNING: [TE_HW-23] Current top level name is set to kv260_ispMipiRx_DP_wrapper, expect zusys_wrapper from default initialisation. Set TE::PR_TOPLEVELNAME to kv260_ispMipiRx_DP_wrapper.
+INFO: [TE_HW-24] Restore project parameters:
+  TE::SIM_NAME:         sim_1  
+  TE::SYNTH_NAME:       synth_1  
+  TE::IMPL_NAME:        impl_1  
+  TE::CONST_NAME:       constrs_1  
+  ------
+Start GUI...all other messages will be print inside the GUI TCL console of Vivado
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [TE_INIT-139] Run project finished without Error. 
+  ------
+-----------------------------------------------------------------------
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_synth_1
+reset_run kv260_ispMipiRx_DP_clk_wiz_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_clk_wiz_0_0_synth_1
+
+reset_run bd_1590_r_sync_0_synth_1
+reset_run kv260_ispMipiRx_DP_axis_data_fifo_cap_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_axis_data_fifo_cap_0_synth_1
+
+reset_run kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0_synth_1
+reset_run kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Sun Jul  3 09:43:36 2022] Launched kv260_ispMipiRx_DP_clk_wiz_0_0_synth_1, kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_synth_1, kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0_synth_1, synth_1...
+Run output will be captured here:
+kv260_ispMipiRx_DP_clk_wiz_0_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_clk_wiz_0_0_synth_1/runme.log
+kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_synth_1/runme.log
+kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0_synth_1/runme.log
+synth_1: O:/KV260/vivado/KV260.runs/synth_1/runme.log
+[Sun Jul  3 09:43:37 2022] Launched impl_1...
+Run output will be captured here: O:/KV260/vivado/KV260.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 1684.242 ; gain = 3.816
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_PS_0_0/kv260_ispMipiRx_DP_PS_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axi_iic_0_0/kv260_ispMipiRx_DP_axi_iic_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xbar_0/kv260_ispMipiRx_DP_xbar_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_auto_pc_0/kv260_ispMipiRx_DP_auto_pc_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axi_interconnect_ctrl_100_0/kv260_ispMipiRx_DP_axi_interconnect_ctrl_100_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xbar_1/kv260_ispMipiRx_DP_xbar_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_auto_pc_1/kv260_ispMipiRx_DP_auto_pc_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axi_interconnect_ctrl_300_0/kv260_ispMipiRx_DP_axi_interconnect_ctrl_300_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axis_data_fifo_cap_0/kv260_ispMipiRx_DP_axis_data_fifo_cap_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axis_subset_converter_0_0/kv260_ispMipiRx_DP_axis_subset_converter_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_clk_wiz_0_0/kv260_ispMipiRx_DP_clk_wiz_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_100MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_100MHz_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_smartconnect_cap_0/kv260_ispMipiRx_DP_smartconnect_cap_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_frmbuf_wr_0_0/kv260_ispMipiRx_DP_v_frmbuf_wr_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/kv260_ispMipiRx_DP_v_proc_ss_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xlconcat_irq1_0/kv260_ispMipiRx_DP_xlconcat_irq1_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xlconstant_0_0/kv260_ispMipiRx_DP_xlconstant_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xlconstant_1_0/kv260_ispMipiRx_DP_xlconstant_1_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xlslice_0_0/kv260_ispMipiRx_DP_xlslice_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xlslice_1_0/kv260_ispMipiRx_DP_xlslice_1_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xlslice_7_0/kv260_ispMipiRx_DP_xlslice_7_0.xml. It will be created.
+write_hw_platform -fixed -include_bit -force -file O:/KV260/vitis/kv260_ispMipiRx_DP_wrapper.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: O:/KV260/vitis/kv260_ispMipiRx_DP_wrapper.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: O:/KV260/vitis/kv260_ispMipiRx_DP_wrapper.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2022.1/data/embeddedsw) loading 0 seconds
+write_hw_platform: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1860.777 ; gain = 154.551
+open_bd_design {O:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/kv260_ispMipiRx_DP.bd}
+Reading block design file <O:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/kv260_ispMipiRx_DP.bd>...
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.4 - PS_0
+Adding component instance block -- xilinx.com:ip:axi_iic:2.1 - axi_iic_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_ctrl_100
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_ctrl_300
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo_cap
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:mipi_csi2_rx_subsystem:5.1 - mipi_csi2_rx_subsyst_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_100MHz
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_300MHz
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_600MHz
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_cap
+Adding component instance block -- xilinx.com:ip:v_frmbuf_wr:2.4 - v_frmbuf_wr_0
+Adding component instance block -- xilinx.com:ip:v_proc_ss:2.3 - v_proc_ss_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_irq1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_7
+Successfully read diagram <kv260_ispMipiRx_DP> from block design file <O:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/kv260_ispMipiRx_DP.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1882.125 ; gain = 21.348
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  4 02:56:07 2022...
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_PS_0_0/kv260_ispMipiRx_DP_PS_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axi_iic_0_0/kv260_ispMipiRx_DP_axi_iic_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xbar_0/kv260_ispMipiRx_DP_xbar_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axi_interconnect_ctrl_100_0/kv260_ispMipiRx_DP_axi_interconnect_ctrl_100_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xbar_1/kv260_ispMipiRx_DP_xbar_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axi_interconnect_ctrl_300_0/kv260_ispMipiRx_DP_axi_interconnect_ctrl_300_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axis_data_fifo_cap_0/kv260_ispMipiRx_DP_axis_data_fifo_cap_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axis_subset_converter_0_0/kv260_ispMipiRx_DP_axis_subset_converter_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_clk_wiz_0_0/kv260_ispMipiRx_DP_clk_wiz_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_100MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_100MHz_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_smartconnect_cap_0/kv260_ispMipiRx_DP_smartconnect_cap_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_frmbuf_wr_0_0/kv260_ispMipiRx_DP_v_frmbuf_wr_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/kv260_ispMipiRx_DP_v_proc_ss_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xlconcat_irq1_0/kv260_ispMipiRx_DP_xlconcat_irq1_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xlconstant_0_0/kv260_ispMipiRx_DP_xlconstant_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xlconstant_1_0/kv260_ispMipiRx_DP_xlconstant_1_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xlslice_0_0/kv260_ispMipiRx_DP_xlslice_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xlslice_1_0/kv260_ispMipiRx_DP_xlslice_1_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xlslice_7_0/kv260_ispMipiRx_DP_xlslice_7_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_auto_pc_0/kv260_ispMipiRx_DP_auto_pc_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: o:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_auto_pc_1/kv260_ispMipiRx_DP_auto_pc_1.xml. It will be created.
+[Sun Jul  3 09:43:07 2022] synth_1 finished
+wait_on_runs: Time (s): cpu = 00:00:10 ; elapsed = 00:52:22 . Memory (MB): peak = 2774.699 ; gain = 0.000
+[Sun Jul  3 09:43:10 2022] Launched kv260_ispMipiRx_DP_clk_wiz_0_0_synth_1, kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_synth_1, bd_1590_r_sync_0_synth_1, kv260_ispMipiRx_DP_axis_data_fifo_cap_0_synth_1, kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0_synth_1, kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0_synth_1, synth_1...
+Run output will be captured here:
+kv260_ispMipiRx_DP_clk_wiz_0_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_clk_wiz_0_0_synth_1/runme.log
+kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_synth_1/runme.log
+bd_1590_r_sync_0_synth_1: O:/KV260/vivado/KV260.runs/bd_1590_r_sync_0_synth_1/runme.log
+kv260_ispMipiRx_DP_axis_data_fifo_cap_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_axis_data_fifo_cap_0_synth_1/runme.log
+kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0_synth_1/runme.log
+kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0_synth_1: O:/KV260/vivado/KV260.runs/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0_synth_1/runme.log
+synth_1: O:/KV260/vivado/KV260.runs/synth_1/runme.log
+[Sun Jul  3 09:43:10 2022] Launched impl_1...
+Run output will be captured here: O:/KV260/vivado/KV260.runs/impl_1/runme.log
+[Sun Jul  3 09:43:10 2022] Waiting for impl_1 to finish (timeout in 120 minutes)...
+
+*** Running vivado
+    with args -log kv260_ispMipiRx_DP_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source kv260_ispMipiRx_DP_wrapper.tcl -notrace
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source kv260_ispMipiRx_DP_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'o:/KV260/ip_lib'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1613.836 ; gain = 0.000
+Command: link_design -top kv260_ispMipiRx_DP_wrapper -part xck26-sfvc784-2LV-c
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_PS_0_0/kv260_ispMipiRx_DP_PS_0_0.dcp' for cell 'kv260_ispMipiRx_DP_i/PS_0'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axi_iic_0_0/kv260_ispMipiRx_DP_axi_iic_0_0.dcp' for cell 'kv260_ispMipiRx_DP_i/axi_iic_0'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axis_data_fifo_cap_0/kv260_ispMipiRx_DP_axis_data_fifo_cap_0.dcp' for cell 'kv260_ispMipiRx_DP_i/axis_data_fifo_cap'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axis_subset_converter_0_0/kv260_ispMipiRx_DP_axis_subset_converter_0_0.dcp' for cell 'kv260_ispMipiRx_DP_i/axis_subset_converter_0'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_clk_wiz_0_0/kv260_ispMipiRx_DP_clk_wiz_0_0.dcp' for cell 'kv260_ispMipiRx_DP_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0.dcp' for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_100MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_100MHz_0.dcp' for cell 'kv260_ispMipiRx_DP_i/proc_sys_reset_100MHz'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0.dcp' for cell 'kv260_ispMipiRx_DP_i/proc_sys_reset_300MHz'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0.dcp' for cell 'kv260_ispMipiRx_DP_i/proc_sys_reset_600MHz'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_smartconnect_cap_0/kv260_ispMipiRx_DP_smartconnect_cap_0.dcp' for cell 'kv260_ispMipiRx_DP_i/smartconnect_cap'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_frmbuf_wr_0_0/kv260_ispMipiRx_DP_v_frmbuf_wr_0_0.dcp' for cell 'kv260_ispMipiRx_DP_i/v_frmbuf_wr_0'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/kv260_ispMipiRx_DP_v_proc_ss_0_0.dcp' for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xbar_0/kv260_ispMipiRx_DP_xbar_0.dcp' for cell 'kv260_ispMipiRx_DP_i/axi_interconnect_ctrl_100/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_auto_pc_0/kv260_ispMipiRx_DP_auto_pc_0.dcp' for cell 'kv260_ispMipiRx_DP_i/axi_interconnect_ctrl_100/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_xbar_1/kv260_ispMipiRx_DP_xbar_1.dcp' for cell 'kv260_ispMipiRx_DP_i/axi_interconnect_ctrl_300/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_auto_pc_1/kv260_ispMipiRx_DP_auto_pc_1.dcp' for cell 'kv260_ispMipiRx_DP_i/axi_interconnect_ctrl_300/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_1590_phy_0.dcp' for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/phy'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_1590_r_sync_0.dcp' for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/r_sync'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/bd_1590_rx_0.dcp' for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_3/bd_1590_vfb_0_0.dcp' for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/vfb_0'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_7/bd_530e_axis_fifo_0.dcp' for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/axis_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_6/bd_530e_axis_register_slice_0_0.dcp' for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/axis_register_slice_0'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_2/bd_530e_hsc_0.dcp' for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_3/bd_530e_input_size_set_0.dcp' for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/input_size_set'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_5/bd_530e_reset_sel_axis_0.dcp' for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/reset_sel_axis'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_4/bd_530e_rst_axis_0.dcp' for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/rst_axis'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_0/bd_530e_smartconnect_0_0.dcp' for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/smartconnect_0'
+INFO: [Project 1-454] Reading design checkpoint 'o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_1/bd_530e_vsc_0.dcp' for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.756 . Memory (MB): peak = 1986.855 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 763 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_PS_0_0/kv260_ispMipiRx_DP_PS_0_0.xdc] for cell 'kv260_ispMipiRx_DP_i/PS_0/U0'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_PS_0_0/kv260_ispMipiRx_DP_PS_0_0.xdc] for cell 'kv260_ispMipiRx_DP_i/PS_0/U0'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axi_iic_0_0/kv260_ispMipiRx_DP_axi_iic_0_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/axi_iic_0/U0'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_axi_iic_0_0/kv260_ispMipiRx_DP_axi_iic_0_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/axi_iic_0/U0'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_clk_wiz_0_0/kv260_ispMipiRx_DP_clk_wiz_0_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/clk_wiz_0/inst'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_clk_wiz_0_0/kv260_ispMipiRx_DP_clk_wiz_0_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/clk_wiz_0/inst'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_clk_wiz_0_0/kv260_ispMipiRx_DP_clk_wiz_0_0.xdc] for cell 'kv260_ispMipiRx_DP_i/clk_wiz_0/inst'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_clk_wiz_0_0/kv260_ispMipiRx_DP_clk_wiz_0_0.xdc] for cell 'kv260_ispMipiRx_DP_i/clk_wiz_0/inst'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_1590_r_sync_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/r_sync/U0'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_1590_r_sync_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/r_sync/U0'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_1590_r_sync_0.xdc] for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/r_sync/U0'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_1590_r_sync_0.xdc] for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/r_sync/U0'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/bd_1590_rx_0.xdc] for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/bd_1590_rx_0.xdc] for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_1590_phy_0_hssio_rx.xdc] for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/phy/inst/inst/bd_1590_phy_0_rx_support_i/slave_rx.bd_1590_phy_0_rx_hssio_i/inst'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_1590_phy_0_hssio_rx.xdc] for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/phy/inst/inst/bd_1590_phy_0_rx_support_i/slave_rx.bd_1590_phy_0_rx_hssio_i/inst'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_1590_phy_0.xdc] for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/phy/inst'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_1590_phy_0.xdc] for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/phy/inst'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0'
+WARNING: [Constraints 18-1039] DIFF_TERM is not supported in Ultrascale.  Automatically translating to DIFF_TERM_ADV=TERM_100. [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_board.xdc:3]
+WARNING: [Constraints 18-1039] DIFF_TERM is not supported in Ultrascale.  Automatically translating to DIFF_TERM_ADV=TERM_100. [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_board.xdc:4]
+WARNING: [Constraints 18-1039] DIFF_TERM is not supported in Ultrascale.  Automatically translating to DIFF_TERM_ADV=TERM_100. [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_board.xdc:5]
+WARNING: [Constraints 18-1039] DIFF_TERM is not supported in Ultrascale.  Automatically translating to DIFF_TERM_ADV=TERM_100. [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_board.xdc:7]
+WARNING: [Constraints 18-1039] DIFF_TERM is not supported in Ultrascale.  Automatically translating to DIFF_TERM_ADV=TERM_100. [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_board.xdc:9]
+WARNING: [Constraints 18-1039] DIFF_TERM is not supported in Ultrascale.  Automatically translating to DIFF_TERM_ADV=TERM_100. [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_board.xdc:11]
+WARNING: [Constraints 18-1039] DIFF_TERM is not supported in Ultrascale.  Automatically translating to DIFF_TERM_ADV=TERM_100. [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_board.xdc:13]
+WARNING: [Constraints 18-1039] DIFF_TERM is not supported in Ultrascale.  Automatically translating to DIFF_TERM_ADV=TERM_100. [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_board.xdc:15]
+WARNING: [Constraints 18-1039] DIFF_TERM is not supported in Ultrascale.  Automatically translating to DIFF_TERM_ADV=TERM_100. [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_board.xdc:17]
+WARNING: [Constraints 18-1039] DIFF_TERM is not supported in Ultrascale.  Automatically translating to DIFF_TERM_ADV=TERM_100. [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_board.xdc:19]
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_100MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_100MHz_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/proc_sys_reset_100MHz/U0'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_100MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_100MHz_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/proc_sys_reset_100MHz/U0'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_100MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_100MHz_0.xdc] for cell 'kv260_ispMipiRx_DP_i/proc_sys_reset_100MHz/U0'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_100MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_100MHz_0.xdc] for cell 'kv260_ispMipiRx_DP_i/proc_sys_reset_100MHz/U0'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/proc_sys_reset_300MHz/U0'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/proc_sys_reset_300MHz/U0'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0.xdc] for cell 'kv260_ispMipiRx_DP_i/proc_sys_reset_300MHz/U0'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_300MHz_0.xdc] for cell 'kv260_ispMipiRx_DP_i/proc_sys_reset_300MHz/U0'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/proc_sys_reset_600MHz/U0'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/proc_sys_reset_600MHz/U0'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0.xdc] for cell 'kv260_ispMipiRx_DP_i/proc_sys_reset_600MHz/U0'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0/kv260_ispMipiRx_DP_proc_sys_reset_600MHz_0.xdc] for cell 'kv260_ispMipiRx_DP_i/proc_sys_reset_600MHz/U0'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_smartconnect_cap_0/bd_0/ip/ip_1/bd_3dab_psr_aclk_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/smartconnect_cap/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_smartconnect_cap_0/bd_0/ip/ip_1/bd_3dab_psr_aclk_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/smartconnect_cap/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_smartconnect_cap_0/bd_0/ip/ip_1/bd_3dab_psr_aclk_0.xdc] for cell 'kv260_ispMipiRx_DP_i/smartconnect_cap/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_smartconnect_cap_0/bd_0/ip/ip_1/bd_3dab_psr_aclk_0.xdc] for cell 'kv260_ispMipiRx_DP_i/smartconnect_cap/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_1/ip/ip_1/bd_2d44_psr_aclk_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_1/ip/ip_1/bd_2d44_psr_aclk_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_1/ip/ip_1/bd_2d44_psr_aclk_0.xdc] for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_1/ip/ip_1/bd_2d44_psr_aclk_0.xdc] for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_4/bd_530e_rst_axis_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/rst_axis/U0'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_4/bd_530e_rst_axis_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/rst_axis/U0'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_4/bd_530e_rst_axis_0.xdc] for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/rst_axis/U0'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_4/bd_530e_rst_axis_0.xdc] for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/rst_axis/U0'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_5/bd_530e_reset_sel_axis_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/reset_sel_axis/U0'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_5/bd_530e_reset_sel_axis_0_board.xdc] for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/reset_sel_axis/U0'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_5/bd_530e_reset_sel_axis_0.xdc] for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/reset_sel_axis/U0'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_5/bd_530e_reset_sel_axis_0.xdc] for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/reset_sel_axis/U0'
+Parsing XDC File [O:/KV260/constraints/vivado_target.xdc]
+Finished Parsing XDC File [O:/KV260/constraints/vivado_target.xdc]
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_1590_phy_0_clocks.xdc] for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/phy/inst'
+WARNING: [Vivado 12-508] No pins matched '*en_hs_datapath_reg/C'. [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_1590_phy_0_clocks.xdc:74]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_1590_phy_0_clocks.xdc:74]
+WARNING: [Vivado 12-508] No pins matched '*init_done_reg/C'. [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_1590_phy_0_clocks.xdc:75]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_1590_phy_0_clocks.xdc:75]
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_1590_phy_0_clocks.xdc] for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/phy/inst'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_impl.xdc] for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0/kv260_ispMipiRx_DP_mipi_csi2_rx_subsyst_0_0_impl.xdc] for cell 'kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_frmbuf_wr_0_0/kv260_ispMipiRx_DP_v_frmbuf_wr_0_0.xdc] for cell 'kv260_ispMipiRx_DP_i/v_frmbuf_wr_0/inst'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_frmbuf_wr_0_0/kv260_ispMipiRx_DP_v_frmbuf_wr_0_0.xdc] for cell 'kv260_ispMipiRx_DP_i/v_frmbuf_wr_0/inst'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_1/bd_530e_vsc_0.xdc] for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_1/bd_530e_vsc_0.xdc] for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_2/bd_530e_hsc_0.xdc] for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_2/bd_530e_hsc_0.xdc] for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst'
+Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_6/bd_530e_axis_register_slice_0_0_clocks.xdc] for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/axis_register_slice_0/inst'
+Finished Parsing XDC File [o:/KV260/vivado/KV260.gen/sources_1/bd/kv260_ispMipiRx_DP/ip/kv260_ispMipiRx_DP_v_proc_ss_0_0/bd_0/ip/ip_6/bd_530e_axis_register_slice_0_0_clocks.xdc] for cell 'kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/axis_register_slice_0/inst'
+INFO: [Project 1-1714] 288 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2589.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 277 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 45 instances
+  IBUFDS_DPHY => IBUFDS_DPHY (DPHY_DIFFINBUF, IBUFCTRL): 5 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 33 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 192 instances
+
+39 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:01:23 ; elapsed = 00:01:24 . Memory (MB): peak = 2589.129 ; gain = 975.293
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2589.129 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1914a864f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 2589.129 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter kv260_ispMipiRx_DP_i/axi_iic_0/U0/X_IIC/WRITE_FIFO_I/sr_i[0]_i_1 into driver instance kv260_ispMipiRx_DP_i/axi_iic_0/U0/X_IIC/WRITE_FIFO_I/callingReadAccess_i_2, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.reg_inf/isr_i[31]_i_1 into driver instance kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.reg_inf/isr_i[55]_i_4, which resulted in an inversion of 27 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/phecc/diwc_valid_i_1 into driver instance kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/phecc/diwc_valid_i_2, which resulted in an inversion of 4 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_ispMipiRx_DP_i/v_frmbuf_wr_0/inst/grp_FrmbufWrHlsDataFlow_fu_162/AXIvideo2MultiPixStream_U0/ap_sync_reg_AXIvideo2MultiPixStream_U0_ap_ready_i_2 into driver instance kv260_ispMipiRx_DP_i/v_frmbuf_wr_0/inst/grp_FrmbufWrHlsDataFlow_fu_162/AXIvideo2MultiPixStream_U0/ap_sync_reg_AXIvideo2MultiPixStream_U0_ap_ready_i_3, which resulted in an inversion of 3 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_ispMipiRx_DP_i/v_frmbuf_wr_0/inst/grp_FrmbufWrHlsDataFlow_fu_162/AXIvideo2MultiPixStream_U0/ap_sync_reg_grp_FrmbufWrHlsDataFlow_fu_162_ap_ready_i_1 into driver instance kv260_ispMipiRx_DP_i/v_frmbuf_wr_0/inst/grp_FrmbufWrHlsDataFlow_fu_162/AXIvideo2MultiPixStream_U0/ap_CS_fsm[4]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/AXIvideo2MultiPixStream_U0/ap_sync_reg_AXIvideo2MultiPixStream_U0_ap_ready_i_1 into driver instance kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/AXIvideo2MultiPixStream_U0/ap_sync_reg_AXIvideo2MultiPixStream_U0_ap_ready_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/CTRL_s_axi_U/ap_sync_reg_hscale_core_polyphase_U0_ap_ready_i_1 into driver instance kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/CTRL_s_axi_U/ap_sync_reg_hscale_core_polyphase_U0_ap_ready_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_init_coeff_phase_loop_init_coeff_tap_fu_202/flow_control_loop_pipe_sequential_init_U/i_fu_86[5]_i_1 into driver instance kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_init_coeff_phase_loop_init_coeff_tap_fu_202/flow_control_loop_pipe_sequential_init_U/i_fu_86[5]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_init_coeff_phase_loop_init_coeff_tap_fu_202/flow_control_loop_pipe_sequential_init_U/select_ln624_1_reg_358[5]_i_1 into driver instance kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_init_coeff_phase_loop_init_coeff_tap_fu_202/flow_control_loop_pipe_sequential_init_U/indvar_flatten_fu_90[8]_i_3, which resulted in an inversion of 4 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_895_2_fu_104/icmp_ln895_reg_382[0]_i_1 into driver instance kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_895_2_fu_104/flow_control_loop_pipe_sequential_init_U/j_fu_98[11]_i_3, which resulted in an inversion of 15 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/v_vcresampler_core_U0/grp_v_vcresampler_core_Pipeline_VITIS_LOOP_1012_2_fu_180/flow_control_loop_pipe_sequential_init_U/icmp_ln1012_reg_616[0]_i_2 into driver instance kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/v_vcresampler_core_U0/grp_v_vcresampler_core_Pipeline_VITIS_LOOP_1012_2_fu_180/flow_control_loop_pipe_sequential_init_U/out_x_fu_114[11]_i_3, which resulted in an inversion of 7 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/v_vcresampler_core_U0/grp_v_vcresampler_core_Pipeline_VITIS_LOOP_1012_2_fu_180/icmp_ln1012_reg_616[0]_i_1 into driver instance kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/v_vcresampler_core_U0/grp_v_vcresampler_core_Pipeline_VITIS_LOOP_1012_2_fu_180/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_17, which resulted in an inversion of 28 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_init_coeff_phase_loop_init_coeff_tap_fu_231/flow_control_loop_pipe_sequential_init_U/select_ln204_1_reg_358[5]_i_1 into driver instance kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_init_coeff_phase_loop_init_coeff_tap_fu_231/flow_control_loop_pipe_sequential_init_U/indvar_flatten_fu_90[8]_i_4, which resulted in an inversion of 7 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_249/flow_control_loop_pipe_sequential_init_U/icmp_ln252_reg_1346[0]_i_1 into driver instance kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_249/flow_control_loop_pipe_sequential_init_U/x_fu_122[11]_i_3, which resulted in an inversion of 6 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_249/mac_muladd_16s_8ns_27s_27_4_1_U130/bd_530e_vsc_0_mac_muladd_16s_8ns_27s_27_4_1_DSP48_5_U/p_reg_reg_i_1__4 into driver instance kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_249/mac_muladd_16s_8ns_27s_27_4_1_U130/bd_530e_vsc_0_mac_muladd_16s_8ns_27s_27_4_1_DSP48_5_U/ram_reg_bram_0_i_15__1, which resulted in an inversion of 41 pins
+INFO: [Opt 31-138] Pushed 127 inverter(s) to 3495 load pin(s).
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_220/grp_hscale_polyphase_fu_220/mac_muladd_8ns_16s_24s_25_4_1_U119/bd_530e_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_220/grp_hscale_polyphase_fu_220/mac_muladd_8ns_16s_24s_25_4_1_U120/bd_530e_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_220/grp_hscale_polyphase_fu_220/mac_muladd_8ns_16s_24s_25_4_1_U121/bd_530e_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_220/grp_hscale_polyphase_fu_220/mac_muladd_8ns_16s_25s_26_4_1_U122/bd_530e_hsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_220/grp_hscale_polyphase_fu_220/mac_muladd_8ns_16s_25s_26_4_1_U123/bd_530e_hsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_220/grp_hscale_polyphase_fu_220/mac_muladd_8ns_16s_25s_26_4_1_U124/bd_530e_hsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_220/grp_hscale_polyphase_fu_220/mac_muladd_8ns_16s_26s_27_4_1_U128/bd_530e_hsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_220/grp_hscale_polyphase_fu_220/mac_muladd_8ns_16s_26s_27_4_1_U129/bd_530e_hsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_220/grp_hscale_polyphase_fu_220/mac_muladd_8ns_16s_26s_27_4_1_U130/bd_530e_hsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_249/mac_muladd_16s_8ns_24s_25_4_1_U116/bd_530e_vsc_0_mac_muladd_16s_8ns_24s_25_4_1_DSP48_1_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_249/mac_muladd_16s_8ns_24s_25_4_1_U117/bd_530e_vsc_0_mac_muladd_16s_8ns_24s_25_4_1_DSP48_1_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_249/mac_muladd_16s_8ns_24s_25_4_1_U118/bd_530e_vsc_0_mac_muladd_16s_8ns_24s_25_4_1_DSP48_1_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_249/mac_muladd_16s_8ns_25s_26_4_1_U119/bd_530e_vsc_0_mac_muladd_16s_8ns_25s_26_4_1_DSP48_2_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_249/mac_muladd_16s_8ns_25s_26_4_1_U120/bd_530e_vsc_0_mac_muladd_16s_8ns_25s_26_4_1_DSP48_2_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_249/mac_muladd_16s_8ns_25s_26_4_1_U121/bd_530e_vsc_0_mac_muladd_16s_8ns_25s_26_4_1_DSP48_2_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_249/mac_muladd_16s_8ns_26s_27_4_1_U125/bd_530e_vsc_0_mac_muladd_16s_8ns_26s_27_4_1_DSP48_4_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_249/mac_muladd_16s_8ns_26s_27_4_1_U126/bd_530e_vsc_0_mac_muladd_16s_8ns_26s_27_4_1_DSP48_4_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_249/mac_muladd_16s_8ns_26s_27_4_1_U127/bd_530e_vsc_0_mac_muladd_16s_8ns_26s_27_4_1_DSP48_4_U/p_reg_reg
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 2054ae238
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2883.250 ; gain = 2.027
+INFO: [Opt 31-389] Phase Retarget created 159 cells and removed 1120 cells
+INFO: [Opt 31-1021] In phase Retarget, 156 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 13cb41a3e
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2883.250 ; gain = 2.027
+INFO: [Opt 31-389] Phase Constant propagation created 40 cells and removed 447 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 328 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1a9073521
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2883.250 ; gain = 2.027
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 2351 cells
+INFO: [Opt 31-1021] In phase Sweep, 559 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+INFO: [Opt 31-274] Optimized connectivity to 1 cascaded buffer cells
+Phase 4 BUFG optimization | Checksum: 1ea9fb09b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2883.250 ; gain = 2.027
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 1 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1ea9fb09b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2883.250 ; gain = 2.027
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 193367aa3
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2883.250 ; gain = 2.027
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 186 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             159  |            1120  |                                            156  |
+|  Constant propagation         |              40  |             447  |                                            328  |
+|  Sweep                        |               0  |            2351  |                                            559  |
+|  BUFG optimization            |               0  |               1  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            186  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 2883.250 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1c57570ab
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2883.250 ; gain = 2.027
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 44 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 13 WE to EN ports
+Number of BRAM Ports augmented: 23 newly gated: 13 Total Ports: 88
+Ending PowerOpt Patch Enables Task | Checksum: 172b45a62
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 3845.027 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 172b45a62
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:20 . Memory (MB): peak = 3845.027 ; gain = 961.777
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 25e06e22d
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 3845.027 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 25e06e22d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3845.027 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 3845.027 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 25e06e22d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 3845.027 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+102 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:57 ; elapsed = 00:00:40 . Memory (MB): peak = 3845.027 ; gain = 1255.898
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 3845.027 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'O:/KV260/vivado/KV260.runs/impl_1/kv260_ispMipiRx_DP_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 3845.027 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file kv260_ispMipiRx_DP_wrapper_drc_opted.rpt -pb kv260_ispMipiRx_DP_wrapper_drc_opted.pb -rpx kv260_ispMipiRx_DP_wrapper_drc_opted.rpx
+Command: report_drc -file kv260_ispMipiRx_DP_wrapper_drc_opted.rpt -pb kv260_ispMipiRx_DP_wrapper_drc_opted.pb -rpx kv260_ispMipiRx_DP_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file O:/KV260/vivado/KV260.runs/impl_1/kv260_ispMipiRx_DP_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 4574.633 ; gain = 729.605
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1b2ecd8a2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 49c16cb8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: c6ac86f9
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: c6ac86f9
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: c6ac86f9
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 11893ef24
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 66992c5a
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 2.1.1.3 PBP: Discrete Incremental
+Phase 2.1.1.3 PBP: Discrete Incremental | Checksum: 8b80f360
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 2.1.1.4 PBP: Compute Congestion
+Phase 2.1.1.4 PBP: Compute Congestion | Checksum: 8b80f360
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 2.1.1.5 PBP: Macro Placement
+Phase 2.1.1.5 PBP: Macro Placement | Checksum: a101b3bf
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 2.1.1.6 PBP: UpdateTiming
+Phase 2.1.1.6 PBP: UpdateTiming | Checksum: 40065f8e
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:17 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 2.1.1.7 PBP: Add part constraints
+Phase 2.1.1.7 PBP: Add part constraints | Checksum: 40065f8e
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:17 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Phase 2.1.1 Partition Driven Placement | Checksum: 40065f8e
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:17 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Phase 2.1 Floorplanning | Checksum: 40065f8e
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:17 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 40065f8e
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:17 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 12ee1cee9
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:17 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 19 LUTNM shape to break, 931 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 13, two critical 6, total 19, new lutff created 1
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 400 nets or LUTs. Breaked 19 LUTs, combined 381 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 4 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 4 nets.  Re-placed 18 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 4 nets or cells. Created 2 new cells, deleted 12 existing cells and moved 18 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 4574.633 ; gain = 0.000
+WARNING: [Physopt 32-894] Found a constraint with the -through option on pin kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/xpm_arst_04/src_arst or the net immediately connecting to the pin. This constraint will block optimizations for this and all downstream leaf pins.
+INFO: [Physopt 32-76] Pass 1. Identified 1 candidate net for fanout optimization.
+INFO: [Physopt 32-81] Processed net kv260_ispMipiRx_DP_i/proc_sys_reset_300MHz/U0/peripheral_aresetn[0]. Replicated 9 times.
+WARNING: [Physopt 32-894] Found a constraint with the -through option on pin kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/xpm_arst_01/src_arst or the net immediately connecting to the pin. This constraint will block optimizations for this and all downstream leaf pins.
+INFO: [Physopt 32-232] Optimized 1 net. Created 9 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 9 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 4574.633 ; gain = 0.000
+INFO: [Physopt 32-457] Pass 1. Identified 1 candidate cell for DSP register optimization.
+INFO: [Physopt 32-665] Processed cell kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2035_2_fu_92/mac_muladd_8s_9ns_18s_18_4_1_U217/bd_530e_hsc_0_mac_muladd_8s_9ns_18s_18_4_1_DSP48_9_U/p_reg_reg. 8 registers were pushed out.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 1 net or cell. Created 8 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 4574.633 ; gain = 0.000
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           19  |            381  |                   400  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            2  |             12  |                     4  |           2  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            9  |              0  |                     1  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            8  |              0  |                     1  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           38  |            393  |                   406  |           2  |          10  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.1 Physical Synthesis In Placer | Checksum: 19badb1fa
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:33 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: 1281511d7
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:34 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1281511d7
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:34 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: c18c33c6
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:35 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1f63334c8
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:36 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 1bfbadb89
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:40 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 3.3.2 Flow Legalize Slice Clusters
+Phase 3.3.2 Flow Legalize Slice Clusters | Checksum: 1aea8ac73
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:40 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 3.3.3 Slice Area Swap
+
+Phase 3.3.3.1 Slice Area Swap Initial
+Phase 3.3.3.1 Slice Area Swap Initial | Checksum: 17655df42
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:43 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Phase 3.3.3 Slice Area Swap | Checksum: 17655df42
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:43 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Phase 3.3 Small Shape DP | Checksum: 1445532c9
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:46 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 129b414e5
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:47 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: aac5765b
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:47 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 13209e391
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:52 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 13209e391
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:52 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 20e19fda8
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.178 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1d45b9362
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.752 . Memory (MB): peak = 4574.633 ; gain = 0.000
+INFO: [Place 46-35] Processed net kv260_ispMipiRx_DP_i/PS_0/U0/emio_gpio_o[0], inserted BUFG to drive 1076 loads.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 1, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1fb5e6fb2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1cde06b6d
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:02 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.500. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1bc18ce02
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:01:32 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:01:32 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1bc18ce02
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:32 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 247b8fa9b
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:34 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|       East|                2x2|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|       West|                2x2|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 247b8fa9b
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:34 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 247b8fa9b
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:35 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:35 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2d0e463c8
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:35 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Ending Placer Task | Checksum: 2457c5909
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:35 . Memory (MB): peak = 4574.633 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+148 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:05 ; elapsed = 00:01:37 . Memory (MB): peak = 4574.633 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 4574.633 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'O:/KV260/vivado/KV260.runs/impl_1/kv260_ispMipiRx_DP_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 4574.633 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file kv260_ispMipiRx_DP_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 4574.633 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file kv260_ispMipiRx_DP_wrapper_utilization_placed.rpt -pb kv260_ispMipiRx_DP_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file kv260_ispMipiRx_DP_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+157 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 4574.633 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'O:/KV260/vivado/KV260.runs/impl_1/kv260_ispMipiRx_DP_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: cbd1ae7e ConstDB: 0 ShapeSum: ee0a7df2 RouteDB: 8ba02c99
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.653 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 20987463 NumContArr: ec72acfe Constraints: abb10352 Timing: 0
+Phase 1 Build RT Design | Checksum: 1b8bc24b3
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 1b8bc24b3
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 1b8bc24b3
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 1a7fb1276
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1c8752135
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 4574.633 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.527  | TNS=0.000  | WHS=-0.060 | THS=-50.821|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 25d5e19dc
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:20 . Memory (MB): peak = 4574.633 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.527  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 1e5a6c60b
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:20 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 26529
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 22273
+  Number of Partially Routed Nets     = 4256
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 2671647c8
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 2671647c8
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Phase 3 Initial Routing | Checksum: 2a83092f1
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:25 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 4259
+ Number of Nodes with overlaps = 372
+ Number of Nodes with overlaps = 33
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.197  | TNS=0.000  | WHS=-0.027 | THS=-0.129 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1b23be635
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:40 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.197  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 19fb7bf73
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:42 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 19fb7bf73
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:42 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 19aadc0f1
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:42 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 19aadc0f1
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:42 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 19aadc0f1
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:42 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 12f49dada
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:45 . Memory (MB): peak = 4574.633 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.197  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1cea87af1
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:45 . Memory (MB): peak = 4574.633 ; gain = 0.000
+Phase 6 Post Hold Fix | Checksum: 1cea87af1
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:45 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.05491 %
+  Global Horizontal Routing Utilization  = 2.42529 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1f661dcd4
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:45 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1f661dcd4
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:45 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1f661dcd4
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:47 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 1f661dcd4
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:47 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.197  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: 1f661dcd4
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:48 . Memory (MB): peak = 4574.633 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:48 . Memory (MB): peak = 4574.633 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+173 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:22 ; elapsed = 00:00:52 . Memory (MB): peak = 4574.633 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 4574.633 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'O:/KV260/vivado/KV260.runs/impl_1/kv260_ispMipiRx_DP_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 4574.633 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file kv260_ispMipiRx_DP_wrapper_drc_routed.rpt -pb kv260_ispMipiRx_DP_wrapper_drc_routed.pb -rpx kv260_ispMipiRx_DP_wrapper_drc_routed.rpx
+Command: report_drc -file kv260_ispMipiRx_DP_wrapper_drc_routed.rpt -pb kv260_ispMipiRx_DP_wrapper_drc_routed.pb -rpx kv260_ispMipiRx_DP_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file O:/KV260/vivado/KV260.runs/impl_1/kv260_ispMipiRx_DP_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 4574.633 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_methodology -file kv260_ispMipiRx_DP_wrapper_methodology_drc_routed.rpt -pb kv260_ispMipiRx_DP_wrapper_methodology_drc_routed.pb -rpx kv260_ispMipiRx_DP_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file kv260_ispMipiRx_DP_wrapper_methodology_drc_routed.rpt -pb kv260_ispMipiRx_DP_wrapper_methodology_drc_routed.pb -rpx kv260_ispMipiRx_DP_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file O:/KV260/vivado/KV260.runs/impl_1/kv260_ispMipiRx_DP_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 4574.633 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file kv260_ispMipiRx_DP_wrapper_power_routed.rpt -pb kv260_ispMipiRx_DP_wrapper_power_summary_routed.pb -rpx kv260_ispMipiRx_DP_wrapper_power_routed.rpx
+Command: report_power -file kv260_ispMipiRx_DP_wrapper_power_routed.rpt -pb kv260_ispMipiRx_DP_wrapper_power_summary_routed.pb -rpx kv260_ispMipiRx_DP_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+185 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 4574.633 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_route_status -file kv260_ispMipiRx_DP_wrapper_route_status.rpt -pb kv260_ispMipiRx_DP_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file kv260_ispMipiRx_DP_wrapper_timing_summary_routed.rpt -pb kv260_ispMipiRx_DP_wrapper_timing_summary_routed.pb -rpx kv260_ispMipiRx_DP_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file kv260_ispMipiRx_DP_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file kv260_ispMipiRx_DP_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file kv260_ispMipiRx_DP_wrapper_bus_skew_routed.rpt -pb kv260_ispMipiRx_DP_wrapper_bus_skew_routed.pb -rpx kv260_ispMipiRx_DP_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+
+WARNING::74 - Unsupported FPGA device name 'xck26-sfvc784-2LV-c'. Verify that the specified device is a valid customer supported device.
+-p xck26-sfvc784-2LV-c
+   ^
+
+INFO: [Memdata 28-208] The XPM instance: <kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/axis_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/axis_fifo>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block kv260_ispMipiRx_DP_i/smartconnect_cap/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the kv260_ispMipiRx_DP_i/smartconnect_cap/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block kv260_ispMipiRx_DP_i/smartconnect_cap/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the kv260_ispMipiRx_DP_i/smartconnect_cap/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block kv260_ispMipiRx_DP_i/smartconnect_cap/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the kv260_ispMipiRx_DP_i/smartconnect_cap/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/gen_pkt_fifo/pkt_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/gen_pkt_fifo/pkt_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/RX_1500M.line_buffer/line_buf/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/LANE_4.ppi_fifo3/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/LANE_4.ppi_fifo3/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/LANE_3.ppi_fifo2/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/LANE_3.ppi_fifo2/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/LANE_2.ppi_fifo1/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/LANE_2.ppi_fifo1/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/LANE_1.ppi_fifo0/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/LANE_1.ppi_fifo0/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block kv260_ispMipiRx_DP_i/axis_data_fifo_cap/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to ultra. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the kv260_ispMipiRx_DP_i/axis_data_fifo_cap/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+Command: write_bitstream -force kv260_ispMipiRx_DP_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC DPIP-2] Input pipelining: DSP kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2035_2_fu_92/mac_muladd_8ns_10ns_17ns_18_4_1_U219/bd_530e_hsc_0_mac_muladd_8ns_10ns_17ns_18_4_1_DSP48_11_U/p_reg_reg input kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2035_2_fu_92/mac_muladd_8ns_10ns_17ns_18_4_1_U219/bd_530e_hsc_0_mac_muladd_8ns_10ns_17ns_18_4_1_DSP48_11_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC RTSTAT-10] No routable loads: 35 net(s) have no routable loads. The problem bus(es) and/or net(s) are kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/phy/inst/inst/bd_1590_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[3].rx_data_lane_inst/fifo_rd_rst_t1_nxt, kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/phy/inst/inst/bd_1590_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[1].rx_data_lane_inst/fifo_rd_rst_t1_nxt, kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/phy/inst/inst/bd_1590_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[0].rx_data_lane_inst/fifo_rd_rst_t1_nxt, kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/phy/inst/inst/bd_1590_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[2].rx_data_lane_inst/fifo_rd_rst_t1_nxt, kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/phy/inst/inst/bd_1590_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[2].rx_data_lane_inst/fifo_rd_rst_t2, kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/phy/inst/inst/bd_1590_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[0].rx_data_lane_inst/fifo_rd_rst_t2, kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/phy/inst/inst/bd_1590_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[1].rx_data_lane_inst/fifo_rd_rst_t2, kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/phy/inst/inst/bd_1590_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[3].rx_data_lane_inst/fifo_rd_rst_t2, kv260_ispMipiRx_DP_i/mipi_csi2_rx_subsyst_0/U0/rx/inst/LANE_3.ppi_fifo2/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_cc.fifo_wr_rst_cc[1], kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/smartconnect_0/inst/s00_nodes/s00_r_node/inst/mi_handler_m_sc_areset_pipe, kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/smartconnect_0/inst/m01_nodes/m01_w_node/inst/mi_handler_m_sc_areset_pipe, kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/smartconnect_0/inst/m01_nodes/m01_r_node/inst/mi_handler_m_sc_areset_pipe, kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/smartconnect_0/inst/m00_nodes/m00_r_node/inst/mi_handler_m_sc_areset_pipe, kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/smartconnect_0/inst/m02_nodes/m02_b_node/inst/mi_handler_m_sc_areset_pipe, kv260_ispMipiRx_DP_i/v_proc_ss_0/U0/smartconnect_0/inst/s00_nodes/s00_w_node/inst/mi_handler_m_sc_areset_pipe... and (the first 15 of 32 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 2 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./kv260_ispMipiRx_DP_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+24 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:26 ; elapsed = 00:00:21 . Memory (MB): peak = 4729.469 ; gain = 154.836
+INFO: [Common 17-206] Exiting Vivado at Sun Jul  3 09:55:57 2022...
+[Sun Jul  3 09:56:01 2022] impl_1 finished
+wait_on_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:12:51 . Memory (MB): peak = 2774.699 ; gain = 0.000
+ERROR: [TE_HW-39] Script (TE::VIV::write_viv_bitfile) failed: ERROR: [Vivado 12-978] Step 'write_bitstream' is already run and up to date.
+.
+ERROR: (TE_HW-39) Script (TE::VIV::write_viv_bitfile) failed: ERROR: [Vivado 12-978] Step 'write_bitstream' is already run and up to date.
+.
+ERROR: [TE_HW-61] Script (TE::VIV::build_design) failed: .
+ERROR: (TE_HW-61) Script (TE::VIV::build_design) failed: .
+ERROR: [TE_INIT-157] Error: Script (TE::hw_build_design) failed: .
+ERROR: (TE_INIT-157) Error: Script (TE::hw_build_design) failed: .
+ERROR:(TE) Script (TE::INIT::run_project) failed: .
+ERROR:(TE) Script (TE::main) failed: .
+INFO: [Common 17-206] Exiting Vivado at Sun Jul  3 09:56:03 2022...

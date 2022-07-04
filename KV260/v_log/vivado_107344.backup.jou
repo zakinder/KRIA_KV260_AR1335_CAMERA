@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Jun 30 18:20:34 2022
+# Process ID: 107344
+# Current directory: O:/KV260/v_log
+# Command line: vivado.exe -source ../scripts/script_main.tcl -mode batch -notrace -tclargs --gui 1
+# Log file: O:/KV260/v_log/vivado.log
+# Journal file: O:/KV260/v_log\vivado.jou
+# Running On: ASUS, OS: Windows, CPU Frequency: 3504 MHz, CPU Physical cores: 8, Host memory: 34222 MB
+#-----------------------------------------------------------
+source ../scripts/script_main.tcl -notrace
+update_compile_order -fileset sources_1
+open_bd_design {O:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_ispMipiRx_DP/kv260_ispMipiRx_DP.bd}
+startgroup
+set_property -dict [list CONFIG.C_EN_BG0_PIN0 {false} CONFIG.C_EN_BG1_PIN0 {false} CONFIG.CMN_PXL_FORMAT {RAW10} CONFIG.CMN_NUM_LANES {2} CONFIG.C_DPHY_LANES {2} CONFIG.C_HS_LINE_RATE {912} CONFIG.DPY_LINE_RATE {912} CONFIG.CLK_LANE_IO_LOC {D7} CONFIG.DATA_LANE0_IO_LOC {E5} CONFIG.DATA_LANE1_IO_LOC {G6} CONFIG.CLK_LANE_IO_LOC_NAME {IO_L13P_T2L_N0_GC_QBC_66} CONFIG.DATA_LANE0_IO_LOC_NAME {IO_L14P_T2L_N2_GC_66} CONFIG.DATA_LANE1_IO_LOC_NAME {IO_L15P_T2L_N4_AD11P_66} CONFIG.C_CLK_LANE_IO_POSITION {26} CONFIG.C_DATA_LANE0_IO_POSITION {28} CONFIG.C_DATA_LANE1_IO_POSITION {30} CONFIG.C_HS_SETTLE_NS {145} CONFIG.DPHYRX_BOARD_INTERFACE {som240_1_connector_mipi_csi_raspi}] [get_bd_cells mipi_csi2_rx_subsyst_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_EN_BG0_PIN0 {true} CONFIG.C_EN_BG1_PIN0 {true} CONFIG.CMN_NUM_LANES {4} CONFIG.C_DPHY_LANES {4}] [get_bd_cells mipi_csi2_rx_subsyst_0]
+endgroup
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_2
+endgroup
+set_property -dict [list CONFIG.CONST_WIDTH {2}] [get_bd_cells xlconstant_2]
+set_property -dict [list CONFIG.CONST_WIDTH {1}] [get_bd_cells xlconstant_2]
+connect_bd_net [get_bd_pins xlconstant_2/dout] [get_bd_pins mipi_csi2_rx_subsyst_0/bg0_pin0_nc]
+connect_bd_net [get_bd_pins mipi_csi2_rx_subsyst_0/bg1_pin0_nc] [get_bd_pins xlconstant_2/dout]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+delete_bd_objs [get_bd_cells xlconstant_2]
+delete_bd_objs [get_bd_nets xlconstant_2_dout]
